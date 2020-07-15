@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.modal-background {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.modal-container {
+    margin: 200px auto;
+    border: 1px solid #cdcdcd;
+    border-radius: 5px;
+    width: 600px;
+    min-height: 200px;
+    background-color: #fff;
+}
+
+.form-header {
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    border-bottom: 1px solid #cdcdcd;
+    font-family: 'tahoma';
+}
+
+h2 {
+    display: inline-block;
+    width: 300px;
+    margin: 5px 15px;
+}
+
+.cancel-button {
+    float: right;
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-right: 5px;
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+}
+
+.modal-credentials {
+    width: 100%;
+}
+
+.username-div,
+.password-div {
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    font-family: 'tahoma';
+}
+
+.modal-credentials input {
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
+    font-size: 0.7em;
+    padding: 5px 0;
+}
+
+::placeholder {
+    color: #929292;
+}
+
+.form-footer {
+    display: inline-block;
+    border-top: 1px solid #cdcdcd;
+    width: 100%;
+    height: 50px;
+    text-align: end;
+}
+
+.form-footer input {
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
+    font-family: 'Tahoma';
+    margin: 15px 0;
+    padding: 3px;
+    font-size: 0.7em;
+}
+
+.form-footer input:nth-of-type(2) {
+    background-color: #bada55;
+    color: darkgreen;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .modal-container {
+        width: 100%;
+    }
+}
