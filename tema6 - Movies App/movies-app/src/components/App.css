@@ -1,0 +1,68 @@
+.app {
+    text-align: center;
+}
+
+.navbar {
+    max-width: 1110px;
+    margin: auto;
+}
+
+.card.text-center {
+    width: 250px;
+    height: 500px;
+}
+
+.card-img-top {
+    height: 370px;
+}
+.display-5 {
+    margin: 1rem;
+}
+
+.card-body {
+    text-align: middle;
+}
+
+.card-subtitle span,
+.card-text span {
+    padding-right: 5px;
+    color: #f5c518;
+}
+
+/* .movies-header {
+    border: 2px solid grey;
+    border-radius: 5px;
+    background-color: grey;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+} */
+
+.text-secondary {
+    color: #f5c518 !important;
+}
+
+.card-block-div {
+    background-color: #333333;
+    border-radius: 10px;
+    padding: 30px;
+}
+.card-block-div a {
+    text-decoration: none;
+    border: 1px solid #f5c518;
+    border-radius: 4px;
+    color: black;
+    font-weight: 600;
+    background-color: #f5c518;
+    padding: 5px;
+}
+
+.card-block-div a:hover {
+    text-decoration: none;
+}
+
+.card-text {
+    color: #adb4bb;
+}
+
+.container-fluid {
+    max-width: 1110px;
+}
