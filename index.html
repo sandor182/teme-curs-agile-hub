@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>E-Shop</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+        />
+        <link rel="stylesheet" href="./layout/fonts/glyphicons.css" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="./script.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <!-- header info section-->
+            <div class="header__info">
+                <div class="header__info__item">
+                    <i class="glyphicon glyphicon-time" aria-hidden="true"></i>
+                    <p>Free and Fast Delivery</p>
+                </div>
+                <div class="header__info__item">
+                    <i
+                        class="glyphicon glyphicon-shopping-cart"
+                        aria-hidden="true"
+                    ></i>
+                    <p>Free shipping On all orders</p>
+                </div>
+                <div class="header__info__item">
+                    <i
+                        class="glyphicon glyphicon-envelope"
+                        aria-hidden="true"
+                    ></i>
+                    <p>info@example.com</p>
+                </div>
+            </div>
+            <!-- header info end -->
+
+            <!-- logo-searchbar-socialmedia section -->
+            <div class="header__logo-searchbar-section">
+                <div class="header__logo">
+                    <img
+                        class="header__logo__img"
+                        src="./layout/images/logo3.jpg"
+                        alt="Logo"
+                        width="120"
+                        height="50"
+                    />
+                </div>
+                <form action="" class="header__search-form">
+                    <input
+                        class="header__search-form__input"
+                        type="search-field"
+                        name="search-field"
+                        value="Search"
+                    />
+                    <select
+                        class="header__search-form__select"
+                        name="search-category"
+                        id="search-category"
+                    >
+                        <option value="">All categories</option>
+                        <option value="man's-wear">Man's wear</option>
+                        <option value="woman's-wear">Woman's wear</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="short-codes">Short codes</option>
+                    </select>
+                    <button class="header__search-form__button">
+                        <img
+                            src="layout/images/search.png"
+                            alt="search button image"
+                            width="30"
+                            height="30"
+                        />
+                    </button>
+                </form>
+                <div class="social-media-icons">
+                    <a href="#"
+                        ><i class="fa fa-user-circle" aria-hidden="true"></i
+                    ></a>
+                    <a href="#"
+                        ><i class="fab fa-facebook-f" aria-hidden="true"></i
+                    ></a>
+                    <a href="#"
+                        ><i class="fab fa-twitter" aria-hidden="true"></i
+                    ></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <!-- logo-searchbar-socialmedia section end -->
+        </header>
+        <!-- header end -->
+        <!-- main container -->
+        <div class="main-container">
+            <!-- main navigation menu -->
+            <nav class="nav">
+                <ul class="nav-list">
+                    <button id="menu-icon" class="main-menu__menu-icon">
+                        <i class="fa fa-bars fa-lg"></i>
+                    </button>
+                    <li class="main-menu__item show-menu-items">
+                        <a href="#home" class="active">Home</a>
+                    </li>
+                    <li class="main-menu__item show-menu-items has-submenu">
+                        <a href="#men" onclick="toggleMenSubmenu()"
+                            >Men's wear<i class="fa fa-caret-down"></i
+                        ></a>
+                        <ul class="men-dropdown-menu">
+                            <div class="men-menu-container">
+                                <div class="men-menu-image">
+                                    <a href="mens.html"
+                                        ><img
+                                            src="/layout/images/woo1.jpg"
+                                            alt="woo image"
+                                    /></a>
+                                </div>
+                                <div class="submenu1">
+                                    <ul class="submenu1__items">
+                                        <li>
+                                            <a href="#men/clothing">Clothing</a>
+                                        </li>
+                                        <li>
+                                            <a href="#men/wallets">Wallets</a>
+                                        </li>
+                                        <li>
+                                            <a href="#men/footwear">Footwear</a>
+                                        </li>
+                                        <li>
+                                            <a href="#men/watches">Watches</a>
+                                        </li>
+                                        <li>
+                                            <a href="#men/accessories"
+                                                >Accessories</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#men/bags">Bags</a>
+                                        </li>
+                                        <li>
+                                            <a href="#men/caps">Caps & Hats</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="submenu2">
+                                    <ul class="submenu2__items">
+                                        <li>
+                                            <a href="#men/jewwellry"
+                                                >Jewellery</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#men/sunglasses"
+                                                >Sunglasses</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#men/parfumes">Parfumes</a>
+                                        </li>
+                                        <li>
+                                            <a href="#men/beauty">Beauty</a>
+                                        </li>
+                                        <li>
+                                            <a href="#men/shirts">Shirts</a>
+                                        </li>
+                                        <li>
+                                            <a href="#men/sunglasses"
+                                                >Sunglasses</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#men/swimwear">Swimwear</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="main-menu__item show-menu-items has-submenu">
+                        <a href="#women"
+                            >Woman's wear<i class="fa fa-caret-down"></i
+                        ></a>
+                    </li>
+                    <li class="main-menu__item show-menu-items">
+                        <a href="#">Electronics</a>
+                    </li>
+                    <li class="main-menu__item show-menu-items">
+                        <a href="#">Short codes</a>
+                    </li>
+                    <li class="main-menu__item show-menu-items">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+                <div class="shopping-cart">
+                    <i class="fa fa-shopping-cart" aria-hidden="true">
+                        $0.00 (0 items)</i
+                    >
+                    <input type="button" value="Empty Cart" />
+                </div>
+            </nav>
+            <!-- main navigation end -->
+            <!--slider-->
+            <div class="slider">
+                <img
+                    class="slider__image"
+                    src="/layout/images/ba2.jpg"
+                    alt="shop products"
+                />
+                <img
+                    class="slider__image second"
+                    src="/layout/images/ba3.jpg"
+                    alt="shop products"
+                />
+                <img
+                    class="slider__image"
+                    src="/layout/images/ba1.jpg"
+                    alt="shop products"
+                />
+            </div>
+        </div>
+    </body>
+</html>
